@@ -146,4 +146,18 @@ console.log(sumOfPositives(newArr));
 // Ex 2: [33, 88, 55, 22, 11, 44] Output: 88
 // Ex 3: [10] Output: 10
 
+function maxNum(arr){
+    let currentMax = arr[0]
+    for (let num of arr){
+        if (num > currentMax){
+            currentMax = num
+        }
+    }
+    return currentMax
+}
+
+console.log('=======')
+console.log(maxNum([3, 7, 2, 8, 10, 4, 11]))
+console.log(maxNum([33, 88, 55, 22, 11, 44]))
+console.log(maxNum([10]))
 
